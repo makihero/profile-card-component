@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--dark-cyan);
+    font-size: 18px;
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 40vh, left 50vw top 50vh;
+}
+.card-container {
+    margin: 170px auto 50px;
+    width: 330px;
+    height: 380px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1);
+}
+.bubbles {
+    height: 140px;
+    background: url(./images/bg-pattern-card.svg);
+}
+.photo {
+    position: absolute;
+    top: 87px;
+    left: 35%;
+    border: 5px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 104px;
+}
+
+.personal-data {
+    text-align: center;
+    height: 150px;
+    background-color: white;
+    padding: 75px;
+    box-sizing: border-box;
+}
+.name {
+    font-weight: 700;
+    color: var(--very-dark-desaturated-blue);
+    margin-bottom: 10px;
+}
+
+.age {
+    color: var(--dark-gray);
+}
+.city {
+    color: var(--dark-gray);
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.stats-container {
+    border-top: 1px solid var(--dark-gray);
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    height: 90px;
+    align-items: center;
+}
+.stats {
+    text-align: center;
+}
+.stat {
+    color: var(--very-dark-desaturated-blue);
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.statics {
+    color: var(--dark-gray);
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 1440px) {
+    .card-container {
+        margin: 100px auto 50px;
+        width: 350px;
+    }
+}
